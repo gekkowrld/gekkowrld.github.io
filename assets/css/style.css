@@ -1,0 +1,85 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+header{
+    display: grid;
+    place-items: center;
+    box-shadow: 9px 9px 12px #555;
+    padding: 30px 0;
+    background: #fff;
+    width: 100vw;
+}
+header img{
+    width: 25vw;
+}
+.welcome{
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    background-color: #333;
+    margin: 20px 0;
+    color: #0ff;
+    font-size: 15px;
+    font-family: 'Courier New', Courier, monospace;
+    gap: 12px;
+    align-items: center;
+}
+.welcome .the-welcome-img img{
+    width: 45vw;
+    animation: headerImgAnim 5s ease-in-out alternate infinite;
+}
+@keyframes headerImgAnim{
+    0%{
+        transform: translateY(10px);
+    }
+    25%{
+        transform: translateX(5px);
+    }
+    50%{
+        transform: translateY(-10px);
+    }
+    75%{
+        transform: translateX(-5px);
+    }
+    100%{
+        transform: translateY(10px);
+    }
+}
+footer{
+    margin-top: auto;
+    display: grid;
+    place-items: center;
+    background: #333;
+    padding: 20px 0;
+    font-size: 21px;
+}
+footer p{
+    color: #0ff;
+    font-family: 'Times New Roman', Times, serif;
+}
+footer ul li a{
+    text-decoration: none;
+    color: #deb990;
+}
+footer ul li a:active{
+    color: #deb;
+}
+footer ul li a:link{
+    color: #deb990;
+}
+footer ul li a:visited{
+    color: #deb990;
+}
+footer p span{
+    font-family: 'Courier New', Courier, monospace;
+}
+footer ul li{
+    list-style: none;
+}
