@@ -52,15 +52,7 @@ header img{
         transform: translateY(10px);
     }
 }
-.about-work{
-    background: linear-gradient(60deg, #f00, #00f);
-    background: -o-linear-gradient(60deg, #f00, #00f);
-    background: -moz-linear-gradient(60deg, #f00, #00f);
-    background: -webkit-linear-gradient(60deg, #f00, #00f);
-    font-family: 'Times New Roman', Times, serif;
-    color: #deb990;
-    padding: 10px 5px;
-}
+
 footer{
     margin-top: auto;
     display: grid;
