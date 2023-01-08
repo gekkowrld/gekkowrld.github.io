@@ -52,7 +52,40 @@ header img{
         transform: translateY(10px);
     }
 }
+.quotes{
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+.quote-box{
+    width: 250px;
+    height: 250px;
+    padding: 10px;
+    display: flex;
+    gap: 12px;
+    border-radius: 12px;
+    flex-direction: column;
+    flex: 0 1 auto;
+    justify-content: space-around;
+    text-align: center;
+    background: linear-gradient(60deg, #a55, #debade);
+    overflow: scroll;
+}
 
+.quote-box cite{
+    color: #0f0;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 21px;
+}
+.quote-box q{
+    color: #00f;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 21px;
+}
 footer{
     margin-top: auto;
     display: grid;
