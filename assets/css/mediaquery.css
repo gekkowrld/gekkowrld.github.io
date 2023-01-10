@@ -8,6 +8,14 @@
         font-size: 21px;
     }
 }
+@media (min-width: 410px){
+    header ul{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        font-size: 21px;
+    }
+}
 @media (min-width: 480px){
     footer{
         font-size: 32px;
@@ -15,7 +23,9 @@
     footer ul{
         display: flex;
         flex-direction: row;
-        gap: 20px;
+    }
+    header ul{
+        font-size: 27px;
     }
 }
 @media (min-width: 520px){
@@ -25,11 +35,15 @@
     .welcome .the-welcome-img img{
         width: 30vw;
     }
+    header ul{
+        gap: 40px;
+    }
 }
 @media (min-width: 560px){
     header img{
         width: 15vw;
     }
+
 }
 @media (min-width: 720px){
     .welcome .the-welcome-img img{
