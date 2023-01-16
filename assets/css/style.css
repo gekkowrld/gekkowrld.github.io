@@ -44,21 +44,6 @@ header ul li a:active{
 header img{
     width: 25vw;
 }
-.welcome{
-    display: flex;
-    justify-content: space-around;
-    padding: 10px;
-    background-color: #333;
-    margin: 20px 0;
-    color: #0ff;
-    font-size: 15px;
-    font-family: 'Courier New', Courier, monospace;
-    gap: 12px;
-    align-items: center;
-}
-.welcome .the-welcome-img img{
-    width: 45vw;
-}
 
 .quotes{
     display: flex;
