@@ -4,46 +4,60 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="../assets/css/draw.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/mediaquery.css">
     <script src="../assets/script/draw.js" defer></script>
     <title>Gekko Wrld | Draw</title>
 </head>
 <body>
-    <aside>
-        <div class="canvas-size-range">
-            <div class="width-range-dis">
-                <p>Width</p>
-                <input type="range" id="the-width-range" min="100" max="1000" value="150">
-                <p class="width-range-value"></p>
+    <header>
+        <a href="https://gekkowrld.github.io"><img src="../img/myLogo.png" alt="Site Logo"></a>
+        <ul>
+          <li><a href="https://gekkowrld.github.io">Home</a></li>
+          <li><a href="../pages/quotes.html">Quotes</a></li>
+          <li><a href="../pages/draw.html">Draw</a></li>
+        </ul>
+      </header>
+      <div class="content">
+        <aside>
+            <div class="canvas-size-range">
+                <div class="width-range-dis">
+                    <p>Width</p>
+                    <input type="range" id="the-width-range" min="100" max="1000" value="150">
+                    <p class="width-range-value"></p>
+                </div>
+                <div class="height-range-dis">
+                    <p>Height</p>
+                    <input type="range" id="the-height-range" min="100" max="550" value="150">
+                    <p class="height-range-value"></p>
+                </div>
+                <div class="stroke-size-dis">
+                    <p>Size</p>
+                    <input type="range" id="stroke-size" min="1" max="100" value="10">
+                    <p class="stroke-size-value"></p>
+                </div>
+                <div class="other-options">
+                    <input type="color" id="canvas-bg-color">
+                    <input type="color" id="canvas-draw-color">
+                    <select id="line-join">
+                        <option value="round">Round</option>
+                        <option value="miter">Miter</option>
+                        <option value="bevel">Bevel</option>
+                    </select>
+                    <select id="line-cap">
+                        <option value="round">Round</option>
+                        <option value="butt">Butt</option>
+                        <option value="square">Square</option>
+                    </select>
+                </div>
             </div>
-            <div class="height-range-dis">
-                <p>Height</p>
-                <input type="range" id="the-height-range" min="100" max="550" value="150">
-                <p class="height-range-value"></p>
-            </div>
-            <div class="stroke-size-dis">
-                <p>Size</p>
-                <input type="range" id="stroke-size" min="1" max="100" value="10">
-                <p class="stroke-size-value"></p>
-            </div>
-            <div class="other-options">
-                <input type="color" id="canvas-bg-color">
-                <input type="color" id="canvas-draw-color">
-                <select id="line-join">
-                    <option value="round">Round</option>
-                    <option value="miter">Miter</option>
-                    <option value="bevel">Bevel</option>
-                </select>
-                <select id="line-cap">
-                    <option value="round">Round</option>
-                    <option value="butt">Butt</option>
-                    <option value="square">Square</option>
-                </select>
-            </div>
-        </div>
-    </aside>
-    <main>
-        <canvas id="draw-pad"></canvas>
-    </main>
+        </aside>
+        <main>
+            <canvas id="draw-pad"></canvas>
+        </main>
+        
+      </div>
 </body>
 </html>

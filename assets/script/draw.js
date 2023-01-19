@@ -18,7 +18,7 @@ ctx.strokeStyle = `${canvasDrawColor.value}`;
 ctx.lineCap = 'round';
 ctx.lineWidth = `${strokeValue.valueAsNumber}`;
 theStrokeValue.innerText = `${strokeValue.valueAsNumber}px`;
-ctx.globalCompositeOperation = 'xor';
+// ctx.globalCompositeOperation = 'xor';
 console.log(canvasDrawColor.value);
 
 let isDrawing = false;
