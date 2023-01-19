@@ -18,6 +18,8 @@ ctx.strokeStyle = `${canvasDrawColor.value}`;
 ctx.lineCap = 'round';
 ctx.lineWidth = `${strokeValue.valueAsNumber}`;
 theStrokeValue.innerText = `${strokeValue.valueAsNumber}px`;
+ctx.globalCompositeOperation = 'xor';
+console.log(canvasDrawColor.value);
 
 let isDrawing = false;
 let x = canvas.clientLeft;
@@ -25,7 +27,7 @@ let y = canvas.clientTop;
 let direction = true;
 let theErrorX = 300;
 
-function canAttributes(){
+function canAttributes(e){
     canvas.width = theWidth.valueAsNumber;
     theWidthValue.innerText = `${theWidth.valueAsNumber}px`;
     canvas.height = theHeight.valueAsNumber;

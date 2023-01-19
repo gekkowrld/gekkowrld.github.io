@@ -12,8 +12,6 @@ body{
     padding: 40px;
 }
 canvas{
-    box-shadow:inset 4px 4px 12px #000,
-        4px 4px 23px #000;
     border-radius: 12px;
 }
 .canvas-size-range{
