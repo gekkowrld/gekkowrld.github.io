@@ -71,7 +71,6 @@ header img{
     justify-content: space-around;
     text-align: center;
     background: linear-gradient(60deg, #a55, #debade);
-    overflow: scroll;
 }
 
 .quote-box cite{

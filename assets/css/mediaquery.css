@@ -3,9 +3,9 @@
         font-size: 15px;
     }
 }
-@media (min-width: 320px){
-    .welcome{
-        font-size: 21px;
+@media (max-width: 220px){
+    .quote-box{
+        overflow: scroll;
     }
 }
 @media (min-width: 410px){
@@ -29,12 +29,6 @@
     }
 }
 @media (min-width: 520px){
-    .welcome{
-        font-size: 27px;
-    }
-    .welcome .the-welcome-img img{
-        width: 30vw;
-    }
     header ul{
         gap: 40px;
     }
@@ -45,17 +39,10 @@
     }
 
 }
-@media (min-width: 720px){
-    .welcome .the-welcome-img img{
-        width: 25vw;
-    }
-}
+
 @media (min-width: 960px){
     header img{
         width: 7vw;
-    }
-    .welcome .the-welcome-img img{
-        width: 15vw;
     }
 }
 
