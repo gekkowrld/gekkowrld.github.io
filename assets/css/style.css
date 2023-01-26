@@ -127,3 +127,15 @@ footer p span{
 footer ul li{
     list-style: none;
 }
+
+noscript{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+noscript p{
+    color: #00f;
+    background: #0f0;
+    font-size: 27px;
+}
