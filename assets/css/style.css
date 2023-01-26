@@ -20,7 +20,6 @@ header{
     box-shadow: 9px 9px 12px #555;
     padding: 30px 0;
     background: #fff;
-    width: 100vw;
 }
 header ul{
     display: flex;
@@ -82,6 +81,20 @@ header img{
     color: #00f;
     font-family: 'Times New Roman', Times, serif;
     font-size: 21px;
+}.placeholder{
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+    color: aquamarine; 
+    background-color: #aaa; 
+    text-align: center;
+}
+.placeholder p {
+    font-size: 21px; 
+    padding: 30px; 
+    border: 2px dotted red; 
+    margin: 10px 0;
 }
 footer{
     margin-top: auto;
