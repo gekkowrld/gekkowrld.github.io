@@ -18,8 +18,6 @@ ctx.strokeStyle = `${canvasDrawColor.value}`;
 ctx.lineCap = 'round';
 ctx.lineWidth = `${strokeValue.valueAsNumber}`;
 theStrokeValue.innerText = `${strokeValue.valueAsNumber}px`;
-// ctx.globalCompositeOperation = 'xor';
-console.log(canvasDrawColor.value);
 
 let isDrawing = false;
 let x = canvas.clientLeft;
@@ -56,13 +54,10 @@ lineJoinStyles.forEach(lineJoinStyle => lineJoinStyle.addEventListener('input', 
 lineCapStyles.forEach(lineCapStyle => lineCapStyle.addEventListener('input', () => {
     if(lineCapStyle.value === 'round'){
         ctx.lineCap = 'round';
-        console.log('round');
     }else if(lineCapStyle.value === 'butt'){
         ctx.lineCap = 'butt';
-        console.log('butt');
     }else if(lineCapStyle.value === 'square'){
         ctx.lineCap = 'square';
-        console.log('square');
     }
 }))
 

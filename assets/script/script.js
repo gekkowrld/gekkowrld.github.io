@@ -43,6 +43,7 @@ for(let i = 0; i < quotesCollection.length; i++){
     const quote = document.createElement('q');
     const cite = document.createElement('cite');
     const reference = document.createElement('a');
+    
     aContainerTag.appendChild(quoteBox);
     quotesContainer.appendChild(aContainerTag);
     quoteBox.appendChild(quote);
@@ -56,5 +57,3 @@ for(let i = 0; i < quotesCollection.length; i++){
     quote.innerText = quotesCollection[i].theQuote;
     reference.innerText = quotesCollection[i].theCiting;
 }
-
-

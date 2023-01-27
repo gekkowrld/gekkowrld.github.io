@@ -126,6 +126,7 @@ footer p span{
     font-family: 'Courier New', Courier, monospace;
 }
 footer ul li{
+    padding: 10px 0;
     list-style: none;
 }
 
