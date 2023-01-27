@@ -38,18 +38,20 @@ const quotesCollection = [
 
 
 for(let i = 0; i < quotesCollection.length; i++){
+    const aContainerTag = document.createElement('a');
     const quoteBox = document.createElement('div');
     const quote = document.createElement('q');
     const cite = document.createElement('cite');
     const reference = document.createElement('a');
-
-    quotesContainer.appendChild(quoteBox);
-    quoteBox.setAttribute('class', 'quote-box')
+    aContainerTag.appendChild(quoteBox);
+    quotesContainer.appendChild(aContainerTag);
     quoteBox.appendChild(quote);
     quoteBox.appendChild(cite);
     cite.appendChild(reference);
 
+    quoteBox.setAttribute('class', 'quote-box')
     reference.setAttribute('href', quotesCollection[i].theReference);
+    aContainerTag.setAttribute('href', quotesCollection[i].theReference);
     
     quote.innerText = quotesCollection[i].theQuote;
     reference.innerText = quotesCollection[i].theCiting;
